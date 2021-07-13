@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <script>
+        function myFunction() {
+            document.getElementById("btn").innerHTML = "thankyou";
+        }
+    </script>
+
+
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+
+
+        #logo img {
+            height: 50px;
+        }
+
+        #navbar {
+            display: flex;
+            background-color: rgba(33, 36, 35, 0.16);
+            position: relative;
+        }
+
+        #navbar::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.89;
+        }
+
+        #navbar ul {
+            display: flex;
+            list-style: none;
+            margin: 15px;
+        }
+
+        #navbar ul li a {
+            margin: 0px;
+            padding: 10px;
+            text-decoration: none;
+
+        }
+
+        #navbar ul li a:hover {
+            color: rgb(255, 253, 253);
+            background-color: rgba(238, 67, 133, 0.1);
+            border-radius: 10px;
+        }
+
+
+
+        /* 2 section css */
+        #order {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 497px;
+            margin: 0%;
+        }
+
+        .r {
+            color: rgb(30, 16, 233);
+        }
+
+        .j {
+            color: rgb(183, 31, 197);
+        }
+
+        #order::before {
+            content: "";
+            position: absolute;
+            background: url(macos-big-sur-apple-layers-fluidic-colorful-wwdc-stock-2732x2732-1455.jpg) center center/cover no-repeat;
+            width: 100%;
+            z-index: -1;
+            height: 500px;
+            opacity: 0.4;
+        }
+
+        h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 50px;
+            color: rgb(27, 26, 26);
+        }
+
+        #order p {
+            color: rgba(252, 250, 250, 1);
+        }
+
+
+        #btn {
+            padding: 10px;
+            margin: 10px;
+            background-color: rgba(219, 119, 161, 0.308);
+            color: rgb(22, 5, 179);
+            border: 2px solid rgba(248, 7, 7, 0.99);
+        }
+
+        #btn:hover {
+            background-color: rgba(245, 137, 137, 0.363);
+            color: rgb(241, 238, 245);
+            border-radius: 10px;
+        }
+
+
+
+        /* 3 section css */
+        #heading {
+            text-align: center;
+            justify-content: center;
+            color: black;
+        }
+
+        .box {
+            margin: 10px;
+            border: 4px solid rgb(165, 113, 115);
+            border-radius: 15px;
+            background-color: rgb(156, 158, 161);
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .box img {
+            width: 100px;
+            margin: auto;
+            height: 150px;
+            width: auto;
+        }
+
+        #primary {
+            display: flex;
+            margin: 5px;
+
+        }
+
+        #services {
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+
+
+
+        /* 4 section css */
+        .client_img {
+            display: flex;
+            text-align: center;
+            justify-content: center;
+        }
+
+        .client_img img {
+            height: 200px;
+            width: 200px;
+            padding: 34px;
+            /* border: 2px solid rgb(113, 176, 228); */
+            border-radius: 20px;
+            /* background-color: rgb(243, 11, 11);
+     */
+        }
+
+        .client_img img:hover {
+            background-color: #00000036;
+            border-radius: 20px;
+        }
+
+        #client::before {
+            content: "";
+            position: absolute;
+            background: url("https://images.unsplash.com/photo-1519114056088-b877fe073a5e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8OHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60")no-repeat center center/cover;
+            width: 100%;
+            z-index: -1;
+            height: 340px;
+            opacity: 0.4;
+        }
+
+
+        #form {
+            text-align: center;
+            justify-content: center;
+            margin-top: 30px;
+            padding: 10px;
+
+        }
+
+        #form input {
+            width: 300px;
+            height: 34px;
+            text-align: center;
+            justify-content: center;
+            border-radius: 8px;
+            margin: 5px;
+            padding: 3px;
+          
+           
+        }
+
+        #form input :hover {
+           background-color: blue;
+        }
+      
+        #last::before {
+            content: "";
+            position: absolute;
+            background: url("https://media.istockphoto.com/photos/neon-glowing-arrows-symbols-stock-image-picture-id1288697510?b=1&k=6&m=1288697510&s=170667a&w=0&h=N0Rke8tBJYkxoI6TwKEAZOzjlpCxosIBVe5aihzga-c=")no-repeat center center/cover;
+            width: 100%;
+            height: 500px;
+            z-index: -1;
+            opacity: 0.5;
+        }
+    </style>
+</head>
+
+
+
+
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="IMG-20160521-WA0018.jpg" alt="">
+        </div>
+        <ul>
+            <li><a href="#"> home</a> </li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">contact us</a></li>
+            <li><a href="#">service</a></li>
+        </ul>
+    </nav>
+
+
+
+
+
+    <section id="order">
+        <h1> good services </h1>
+        <p class="r">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque omnis repellat quis, dicta itaque
+            facilis
+            magnam at aut assumenda officiis.</p>
+        <p id="j">click here to give order</p>
+        <button id="btn" onclick="myFunction()"><a href="transition.html">order now</a> </button>
+    </section>
+
+
+
+
+
+    <section id="services">
+        <h1 id="heading">services</h1>
+        <div id="primary">
+            <div class="box">
+                <img src="https://content.jdmagicbox.com/comp/surat/a1/0261px261.x261.141027142531.d3a1/catalogue/domino-s-pizza-katargam-surat-pizza-outlets-domino-s-k80n5z.jpg?clr=">
+                <h2 class="second center"> PIZZA</h2>
+                <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae sit vitae quia est facilis ab
+                    inventore </p>
+            </div>
+            <div class="box">
+                <img src="https://b.zmtcdn.com/data/pictures/chains/4/19257044/80b00bc9daa926cbbd9eff789af62525.jpg?fit=around|771.75:416.25&crop=771.75:416.25;*,*">
+                <h2 class="second center"> BURGER</h2>
+                <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae sit vitae quia est facilis ab
+                    inventore </p>
+            </div>
+            <div class="box">
+                <img src="https://www.thespruceeats.com/thmb/IHKuXcx3uUI1IWkM_cnnQdFH-zQ=/3485x2323/filters:fill(auto,1)/how-to-make-homemade-french-fries-2215971-hero-01-02f62a016f3e4aa4b41d0c27539885c3.jpg">
+                <h2 class="second center"> FRANCE FRY</h2>
+                <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae sit vitae quia est facilis ab
+                    inventore </p>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="client">
+        <h1 id="heading">BEST FOOD</h1>
+        <div class="client_img">
+            <div>
+                <img src="https://b.zmtcdn.com/data/pictures/chains/4/19257044/80b00bc9daa926cbbd9eff789af62525.jpg?fit=around|771.75:416.25&crop=771.75:416.25;*,*">
+            </div>
+            <div>
+                <img src="https://b.zmtcdn.com/data/pictures/chains/4/19257044/80b00bc9daa926cbbd9eff789af62525.jpg?fit=around|771.75:416.25&crop=771.75:416.25;*,*">
+            </div>
+            <div>
+                <img src="https://b.zmtcdn.com/data/pictures/chains/4/19257044/80b00bc9daa926cbbd9eff789af62525.jpg?fit=around|771.75:416.25&crop=771.75:416.25;*,*">
+            </div>
+            <div>
+                <img src="https://b.zmtcdn.com/data/pictures/chains/4/19257044/80b00bc9daa926cbbd9eff789af62525.jpg?fit=around|771.75:416.25&crop=771.75:416.25;*,*">
+            </div>
+        </div>
+    </section>
+
+
+    <footer id="last">
+        <div id="form">
+            <h1>submit the form for join with us</h1>
+            <form action="backend.php">
+                <div>
+                    <input type=text placeholder="enter your name">
+                </div>
+
+                <div>
+                    <input type=text placeholder="enter user name ">
+                </div>
+
+                <div>
+                    <input type=password placeholder="enter password">
+                </div>
+
+                <div>
+                    <input type=number placeholder="enter your phone number">
+                </div>
+
+                <div>
+                    <input type=text placeholder="enter your gmail id">
+                </div>
+
+                <div>
+                    <input type="date">
+                </div>
+
+                <div id="SMALL">
+                    <input type="submit" value="submit"><br>
+                    <input type="reset" value="reset "><br>
+                </div>
+            </form>
+        </div>
+    </footer>
+
+
+
+</body>
+
+</html>
